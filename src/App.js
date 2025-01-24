@@ -1,3 +1,4 @@
+// src/App.js
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -57,14 +58,14 @@ const App = () => {
                   categories.map((category) => (
                     <li className="nav-item" key={category}>
                       <Link className="nav-link" to={`/category/${category}`}>
+                        {" "}
+                        {/* תיקון כאן */}
                         {category}
                       </Link>
                     </li>
                   ))}
               </ul>
               <ul className="navbar-nav ms-auto">
-                {" "}
-                {/* עיצוב לצד ימין */}
                 <li className="nav-item">
                   <Link className="nav-link" to="/wishlist">
                     <i className="bi bi-heart-fill text-danger"></i> Wishlist (

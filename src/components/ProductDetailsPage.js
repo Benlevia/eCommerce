@@ -1,3 +1,4 @@
+// src/components/ProductDetailsPage.js
 import React, { useState, useEffect } from "react"; // ייבוא של useState ו-useEffect
 import { useParams } from "react-router-dom";
 
